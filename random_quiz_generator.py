@@ -22,11 +22,28 @@ CAPITALS = {
 
 for quiz_num in range(35):
 
-    quiz_file = open(f"capitals_quiz_{quiz_num + 1}.txt", "w", encoding="utf-8")
-    answer_file = open(f"capitals_quiz_answers_{quiz_num + 1}.txt", "w", encoding="utf-8")
+    quiz_file = open(
+        f"capitals_quiz_{quiz_num + 1}.txt",
+        "w",
+        encoding="utf-8"
+    )
 
-    quiz_file.write("Hello Quiz!\n")
-    answer_file.write("Hello Answer Key!\n")
+    answer_file = open(
+        f"capitals_quiz_answers_{quiz_num + 1}.txt",
+        "w",
+        encoding="utf-8"
+    )
+
+    quiz_file.write("Name:\n\n")
+    quiz_file.write("Date:\n\n")
+    quiz_file.write("Period:\n\n")
+
+    quiz_file.write(
+        "                    "
+        f"State Capitals Quiz (Form {quiz_num + 1})\n\n"
+    )
+
+    answer_file.write("Answer Key\n\n")
 
     quiz_file.close()
     answer_file.close()
