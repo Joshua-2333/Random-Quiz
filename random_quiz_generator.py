@@ -19,3 +19,12 @@ CAPITALS = {
 	'Virginia': 'Richmond', 'Washington': 'Olympia', 'West Virginia': 'Charleston',
 	'Wisconsin': 'Madison', 'Wyoming': 'Cheyenne',
 }
+
+quiz_file = open("capitals_quiz_1.txt", "w", encoding="utf-8")
+answer_file = open("capitals_quiz_answers_1.txt", "w", encoding="utf-8")
+
+quiz_file.write("Hello Quiz!\n")
+answer_file.write("Hello Answer Key!\n")
+
+quiz_file.close()
+answer_file.close()
