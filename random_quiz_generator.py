@@ -20,11 +20,13 @@ CAPITALS = {
 	'Wisconsin': 'Madison', 'Wyoming': 'Cheyenne',
 }
 
-quiz_file = open("capitals_quiz_1.txt", "w", encoding="utf-8")
-answer_file = open("capitals_quiz_answers_1.txt", "w", encoding="utf-8")
+for quiz_num in range(35):
 
-quiz_file.write("Hello Quiz!\n")
-answer_file.write("Hello Answer Key!\n")
+    quiz_file = open(f"capitals_quiz_{quiz_num + 1}.txt", "w", encoding="utf-8")
+    answer_file = open(f"capitals_quiz_answers_{quiz_num + 1}.txt", "w", encoding="utf-8")
 
-quiz_file.close()
-answer_file.close()
+    quiz_file.write("Hello Quiz!\n")
+    answer_file.write("Hello Answer Key!\n")
+
+    quiz_file.close()
+    answer_file.close()
