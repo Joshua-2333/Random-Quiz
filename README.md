@@ -2,8 +2,6 @@
 
 A Python program that automatically creates randomized US state capitals quizzes and answer keys.
 
-This project was built using concepts from **Automate the Boring Stuff with Python** and demonstrates working with dictionaries, files, loops, and the random module.
-
 ## Features
 
 - Generates 35 unique quiz files
