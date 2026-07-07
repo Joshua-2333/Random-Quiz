@@ -1,0 +1,5 @@
+capitals_quiz_*.txt
+capitals_quiz_answers_*.txt
+
+__pycache__/
+*.pyc
