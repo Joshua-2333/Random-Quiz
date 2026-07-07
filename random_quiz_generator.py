@@ -47,7 +47,6 @@ for quiz_num in range(35):
     states = list(CAPITALS.keys())
     random.shuffle(states)
 
-
     for question_num in range(50):
 
         state = states[question_num]
@@ -74,6 +73,12 @@ for quiz_num in range(35):
             )
 
         quiz_file.write("\n")
+
+        correct_letter = letters[answer_options.index(correct_answer)]
+
+        answer_file.write(
+            f"{question_num + 1}. {correct_letter}\n"
+        )
 
     quiz_file.close()
     answer_file.close()
